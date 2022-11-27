@@ -1,30 +1,17 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 """
-Created on Sat November 26 13:56:43 2022
-@authors: Salihu Abduljawwad
-          Gideon Wangui
+Class User inherits from BaseModel
 """
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """User class inherits from BaseModel
-    Attributes:
-        email (str): Public class attribute for User's email
-        password (str): Public class attribute for User's password
-        first_name (str): Public class attribute for User's first name
-        last_name (str): Public class attribute for User's last name
     """
-    email = ''
-    password = ''
-    first_name = ''
-    last_name = ''
-
-    def __init__(self, *args, **kwargs):
-        """init method for User class
-        Attributes:
-            args (list): The list with arguments
-            kwargs (dict): A dictionary with arguments
-        """
-        super().__init__(*args, **kwargs)
+    This class has public attributes and will use
+    FileStorage in engine folder to manage serialization
+    and deserialization of User
+    """
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
